@@ -1,39 +1,141 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Derivado de "Desafío: el menú de la cena"</title>
-    </head>
-    <body>
-    
-        <h1>Our dinner menu</h1>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivado de "Proyecto: libro de recetas"</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Meal</th>
-                    <th>Ingredients</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Spaghetti Bolognese</td>
-                    <td>Spaghetti, ground beef, tomato sauce, garlic, onion, herbs</td>
-                    <td>$12.99</td>
-                </tr>
-                <tr>
-                    <td>Grilled Chicken Salad</td>
-                    <td>Grilled chicken, mixed greens, tomatoes, cucumber, vinaigrette</td>
-                    <td>$10.50</td>
-                </tr>
-                <tr>
-                    <td>Vegetarian Pizza</td>
-                    <td>Tomato sauce, mozzarella, bell peppers, olives, onions, mushrooms</td>
-                    <td>$14.00</td>
-                </tr>
-            </tbody>
-        </table>
+        /* Estilo para el encabezado */
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    </body>
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+
+        /* Sección principal */
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Títulos de secciones */
+        h2 {
+            font-size: 2.2em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para párrafos */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Listas */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            background-color: #f1f1f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Enlaces */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Imágenes */
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenidos a Mi Sitio Web Mejorado</h1>
+    </header>
+
+    <!-- Sección sobre mí -->
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>¡Hola! Soy un entusiasta de la programación y la tecnología. Estoy aprendiendo a crear sitios web y aplicaciones. Este sitio es un ejemplo de lo que puedo hacer. ¡Espero que te guste!</p>
+    </section>
+
+    <section>
+        <h2>Mis Proyectos</h2>
+        <ul>
+            <li><a href="https://github.com/miusuario/proyecto1" target="_blank">Proyecto 1: Página Personal</a></li>
+            <li><a href="https://github.com/miusuario/proyecto2" target="_blank">Proyecto 2: Aplicación Web</a></li>
+            <li><a href="https://github.com/miusuario/proyecto3" target="_blank">Proyecto 3: Juego en HTML5</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Imágenes de mis Proyectos</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Imagen del proyecto">
+        <p>Esta es una imagen representativa de uno de mis proyectos. ¡Cada proyecto tiene su propia historia y desafío!</p>
+    </section>
+    <footer>
+        <p>Hecho por David Esteban | <a href="https://github.com/miusuario" target="_blank">Mi GitHub</a></p>
+    </footer>
+
+</body>
 </html>
