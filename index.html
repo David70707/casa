@@ -9,7 +9,7 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 0 0 80px 0; /* espacio para el footer fijo */
             background-color: #fafafa;
             color: #333;
         }
@@ -26,6 +26,27 @@
         header h1 {
             margin: 0;
             font-size: 2.8em;
+        }
+
+        /* Nuevo menú de navegación */
+        nav {
+            background-color: #0056b3;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
         }
 
         /* Sección principal */
@@ -112,26 +133,33 @@
         <h1>Bienvenidos a Mi Sitio Web</h1>
     </header>
 
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#libro-recetas">Libro de Recetas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
     <!-- Sección sobre mí -->
-    <section>
+    <section id="sobre-mi">
         <h2>Sobre Mí</h2>
         <p>Soy un apasionado de la cocina y me encanta compartir recetas fáciles y deliciosas para todos los niveles. En este sitio encontrarás una colección de recetas que he probado y perfeccionado con mucho cariño.</p>
     </section>
 
     <!-- Sección libro de recetas -->
-    <section>
+    <section id="libro-recetas">
         <h2>Libro de Recetas</h2>
         <ul>
-            <li>Ensalada César clásica</li>
-            <li>Pollo al curry con arroz basmati</li>
-            <li>Brownies de chocolate fundente</li>
-            <li>Pan casero con masa madre</li>
-            <li>Sopa de verduras mediterránea</li>
+            <li><a href="#">Ensalada César clásica</a></li>
+            <li><a href="#">Pollo al curry con arroz basmati</a></li>
+            <li><a href="#">Brownies de chocolate fundente</a></li>
+            <li><a href="#">Pan casero con masa madre</a></li>
+            <li><a href="#">Sopa de verduras mediterránea</a></li>
         </ul>
     </section>
 
     <!-- Pie de página -->
-    <footer>
+    <footer id="contacto">
         &copy; 2025 Mi Sitio Web | <a href="#">Contacto</a>
     </footer>
 </body>
