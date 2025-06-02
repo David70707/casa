@@ -1,192 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Derivado de "Proyecto: libro de recetas"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Personal</title>
     <style>
-        /* Estilos globales */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0 0 80px 0; /* espacio para el footer fijo */
-            background-color: #fafafa;
+            padding: 0;
+            background: #f2f2f2;
             color: #333;
         }
-
-        /* Estilo para el encabezado */
         header {
-            background-color: #007bff;
+            background-color: #0066cc;
             color: white;
+            padding: 1rem;
             text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-        }
-
-        /* Nuevo menú de navegación */
-        nav {
-            background-color: #0056b3;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-            text-decoration: underline;
-        }
-
-        /* Sección principal */
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* Títulos de secciones */
-        h2 {
-            font-size: 2.2em;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-
-        /* Estilos para párrafos */
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        /* Listas */
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            background-color: #f1f1f1;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        li:hover {
-            background-color: #007bff;
-            color: white;
-            transform: translateX(5px);
-        }
-
-        /* Enlaces */
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Imágenes */
-        img {
-            width: 100%;
+        main {
+            padding: 2rem;
             max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
-        /* Estilo para el pie de página */
+        ul {
+            padding-left: 1.5rem;
+        }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 1rem;
+            background: #ddd;
+            margin-top: 2rem;
         }
-
-        footer a {
-            color: #007bff;
+        a {
+            color: #0066cc;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado -->
+
     <header>
-        <h1>Bienvenidos a Mi Sitio Web</h1>
+        <h1>¡Bienvenido a mi página web!</h1>
+        <p>Hecha con GitHub Pages</p>
     </header>
 
-    <!-- Menú de navegación -->
-    <nav>
-        <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#libro-recetas">Libro de Recetas</a>
-        <a href="#tips-cocina">Tips de Cocina</a>
-        <a href="#mejores-utensilios">Mejores Utensilios</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <main>
+        <h2>Sobre mí</h2>
+        <p>Hola, soy un estudiante aprendiendo a programar con HTML y GitHub Pages.</p>
 
-    <!-- Sección sobre mí -->
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy un apasionado de la cocina y me encanta compartir recetas fáciles y deliciosas para todos los niveles. En este sitio encontrarás una colección de recetas que he probado y perfeccionado con mucho cariño.</p>
-    </section>
+        <h2>Imagen de ejemplo</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1920px-Markdown-mark.svg.png" alt="Ejemplo de imagen">
 
-    <!-- Sección libro de recetas -->
-    <section id="libro-recetas">
-        <h2>Libro de Recetas</h2>
+        <h2>Enlaces útiles</h2>
         <ul>
-            <li><a href="#">Ensalada César clásica</a></li>
-            <li><a href="#">Pollo al curry con arroz basmati</a></li>
-            <li><a href="#">Brownies de chocolate fundente</a></li>
-            <li><a href="#">Pan casero con masa madre</a></li>
-            <li><a href="#">Sopa de verduras mediterránea</a></li>
+            <li><a href=https://es.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/pp/project-recipe-book>Khan Academy</a></li>
+            <li><a href="https://github.com">GitHub</a></li>
+            <li><a href="https://pages.github.com/">GitHub Pages</a></li>
         </ul>
-    </section>
 
-    <!-- Sección tips de cocina -->
-    <section id="tips-cocina">
-        <h2>Tips de Cocina</h2>
-        <ul>
-            <li>Usa cuchillos bien afilados para mayor seguridad y precisión.</li>
-            <li>Prepara todos los ingredientes antes de empezar a cocinar (mise en place).</li>
-            <li>No sobrecargues la sartén para que los alimentos se cocinen uniformemente.</li>
-            <li>Prueba la comida mientras cocinas para ajustar sazón.</li>
-            <li>Deja reposar las carnes después de cocinarlas para conservar jugosidad.</li>
-        </ul>
-    </section>
+        <h2>Lo que he aprendido</h2>
+        <ol>
+            <li>Crear un archivo HTML</li>
+            <li>Usar encabezados y listas</li>
+            <li>Subir contenido a GitHub</li>
+            <li>Publicar una web con GitHub Pages</li>
+        </ol>
+    </main>
 
-    <!-- Sección mejores utensilios -->
-    <section id="mejores-utensilios">
-        <h2>Mejores Utensilios de Cocina</h2>
-        <ul>
-            <li>Cuchillo de chef de buena calidad.</li>
-            <li>Tabla de cortar resistente y fácil de limpiar.</li>
-            <li>Sartén antiadherente para cocinar con menos aceite.</li>
-            <li>Batidora de mano para preparar salsas y purés rápidamente.</li>
-            <li>Termómetro de cocina para medir la temperatura interna de carnes.</li>
-        </ul>
-    </section>
-
-    <!-- Pie de página -->
-    <footer id="contacto">
-        &copy; 2025 Mi Sitio Web | <a href="#">Contacto</a>
+    <footer>
+        <p>© 2025 David Esteban |4A </p>
     </footer>
+
 </body>
 </html>
